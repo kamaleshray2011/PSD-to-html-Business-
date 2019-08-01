@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'open_bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+#slider {
+    margin: 0;
+    padding: 0;
+}
+
+.skdslider {
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.slider .slide {
+    display: none;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.skdslider ul.slide-navs {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.skdslider ul.slide-navs li {
+    float: left;
+    /* background: url("image/slide-bg.png") no-repeat scroll 0 0 transparent; */
+    background: url("../images/slides/image/slide-bg.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+    width: 25px;
+    margin-right: 4px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.skdslider ul.slide-navs li.active {
+    /* background: url("image/slide-bg-active.png") no-repeat scroll 0 0 transparent; */
+    background: url("../images/slides/image/slide-bg-active.png") no-repeat scroll 0 0 transparent;
+}
+
+.slider .slide {
+    text-align: center;
+    position: relative;
+}
+
+.slider .slide .slide-desc {
+    /* background: url("image/slide_desc.png") repeat scroll 0 0 transparent;
+    background: url("../images/slides/image/slide_desc.png") repeat scroll 0 0 transparent; */
+    left: 50%;
+    padding: 0 15px 0 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.slider .slide .slide-desc>h2 {
+    color: #fff;
+    font-family: 'open_bold';
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 134%;
+    margin-left: -100px;
+}
+
+.slider .slide-desc>p {
+    color: #fff;
+    font-family: 'open_bold';
+    font-size: 25px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.slider .slide-desc>a {
+    display: inline-block;
+    padding: 10px 17px;
+    text-transform: uppercase;
+    background: #3ca2a2;
+    color: #fff;
+    font-family: 'open_bold';
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 100px;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    z-index: 5;
+}
+
+.slider .slide-desc>a:hover {
+    background: #ffc155;
+    z-index: 5;
+}
+
+.skdslider a.prev {
+    /* background: url("image/left.png") no-repeat scroll 0 0 transparent; */
+    background: url("../images/slides/image/left.png") no-repeat scroll 0 0 transparent;
+    width: 43px;
+    height: 43px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    margin-top: -17px;
+    z-index: 5;
+}
+
+.skdslider a.next {
+    /* background: url("image/right.png") no-repeat scroll 0 0 transparent; */
+    background: url("../images/slides/image/right.png") no-repeat scroll 0 0 transparent;
+    width: 43px;
+    height: 43px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    margin-top: -17px;
+    z-index: 5;
+}
+
+.slider a.prev:hover {}
+
+.slider a.next:hover {}
+
+
+/* .skdslider a.play {
+    background: url("image/play.png") no-repeat scroll center center transparent;
+	width:35px;
+	height:35px;
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:48%;
+	margin-top:-17px;
+} */
+
+
+/* .skdslider a.pause{
+  background: url("image/pause.png") no-repeat scroll center center transparent;
+	width:35px;
+	height:35px;
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:48%;
+	margin-top:-17px;
+} */
+
+
+/*Some Responsive CSS */
+
+@media screen and (max-width:767px) {
+    .slider .slide-desc>h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .slider .slide-desc>p {
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 5px;
+    }
+    .slider .slide-desc>p a.more {
+        font-size: 14px;
+    }
+}
